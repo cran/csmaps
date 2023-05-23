@@ -10,7 +10,7 @@ library(data.table)
 library(magrittr)
 
 ## ----fig.height=6, fig.width=6------------------------------------------------
-pd_county <- csmaps::nor_county_map_b2020_default_sf
+pd_county <- csmaps::nor_county_map_b2024_default_sf
 leaflet::leaflet(
   pd_county,
   options = leaflet::leafletOptions(preferCanvas = F)

@@ -11,7 +11,7 @@ library(data.table)
 library(magrittr)
 
 ## ----fig.height=6, fig.width=6------------------------------------------------
-pd <- copy(csmaps::nor_municip_map_b2020_default_dt)
+pd <- copy(csmaps::nor_municip_map_b2024_default_dt)
 q <- ggplot()
 q <- q + geom_polygon(
   data = pd,
@@ -22,7 +22,7 @@ q <- q + geom_polygon(
   ), 
   color="black", 
   fill="white",
-  size=0.1
+  linewidth = 0.2
 )
 q <- q + theme_void()
 q <- q + coord_quickmap()
